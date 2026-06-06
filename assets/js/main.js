@@ -248,4 +248,28 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Creative Gallery Filter
+   */
+  const creativeFilters = document.querySelectorAll('.creative-filter');
+  const creativeItems   = document.querySelectorAll('.creative-item');
+
+  creativeFilters.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      // Toggle active class
+      creativeFilters.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      const filter = this.getAttribute('data-filter');
+
+      creativeItems.forEach(function(item) {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
 })();

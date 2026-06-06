@@ -1,583 +1,1225 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Jeremy Nainggolan | Portfolio</title>
-  <meta content="Jeremy Mart V. Nainggolan Professional Portfolio - Web, Back-End, and Mobile Developer"
-    name="description">
-  <meta
-    content="Jeremy Nainggolan, Software Developer, Web Developer, Back-End Developer, Mobile Developer, Flutter, Laravel, CodeIgniter"
-    name="keywords">
-
-  <link href="assets/img/logo/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
-    rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <!-- ═══ HEADER ═══ -->
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <span class="logo-mark">MJ</span>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#creative">Creative</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="./document/resume.pdf" target="_blank" class="nav-cta">
-              <i class="bi bi-file-earmark-person"></i> CV
-            </a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- ═══ HERO SECTION ═══ -->
-    <section id="home" class="hero section dark-background">
-      <img src="assets/img/home.jpg" alt="" data-aos="fade-in">
-      <div class="hero-overlay"></div>
-
-      <!-- Floating geometric decorations -->
-      <div class="hero-deco hero-deco--circle"></div>
-      <div class="hero-deco hero-deco--ring"></div>
-      <div class="hero-deco hero-deco--dot-grid"></div>
-
-      <div class="container hero-content" data-aos="fade-up" data-aos-delay="100">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Available for opportunities
-        </div>
-        <h1 class="hero-name">Jeremy<br><em>Nainggolan</em></h1>
-        <div class="hero-role">
-          <span class="role-prefix">—</span>
-          <span class="typed"
-            data-typed-items="Software Developer,Web Developer,Back-End Developer,Mobile Developer"></span>
-        </div>
-        <div class="hero-actions">
-          <a href="#portfolio" class="btn-primary-hero">View Work <i class="bi bi-arrow-right-short"></i></a>
-          <a href="#about" class="btn-ghost-hero">About Me</a>
-        </div>
-      </div>
-
-      <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="400">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- ═══ ABOUT SECTION ═══ -->
-    <section id="about" class="about section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="about-header">
-          <span class="section-eyebrow">Who I Am</span>
-          <h2 class="section-heading">About Me</h2>
-        </div>
-
-        <div class="about-grid">
-          <!-- Left column: photo + info card -->
-          <div class="about-left" data-aos="fade-right" data-aos-delay="150">
-            <div class="profile-photo-wrap">
-              <img src="assets/img/profile.jpeg" alt="Jeremy Nainggolan" class="profile-photo">
-              <div class="photo-accent"></div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-row">
-                <span class="info-label"><i class="bi bi-person"></i></span>
-                <span class="info-value">Jeremy Mart V. Nainggolan</span>
-              </div>
-              <div class="info-row">
-                <span class="info-label"><i class="bi bi-briefcase"></i></span>
-                <span class="info-value">Web, Back-End & Mobile Dev</span>
-              </div>
-              <div class="info-row">
-                <span class="info-label"><i class="bi bi-envelope"></i></span>
-                <a href="mailto:jeremy.nainggolann@gmail.com"
-                  class="info-value info-link">jeremy.nainggolann@gmail.com</a>
-              </div>
-              <div class="info-row">
-                <span class="info-label"><i class="bi bi-telephone"></i></span>
-                <a href="tel:+6285171679411" class="info-value info-link">(+62) 851-7167-9411</a>
-              </div>
-            </div>
-
-            <!-- Skills chips -->
-            <div class="skills-block">
-              <p class="skills-block-title">Tech Stack</p>
-              <div class="skill-chips">
-                <span class="chip chip--primary">PHP / Laravel</span>
-                <span class="chip chip--primary">Dart / Flutter</span>
-                <span class="chip chip--primary">Java</span>
-                <span class="chip chip--primary">HTML · CSS · JS</span>
-                <span class="chip chip--primary">SQL</span>
-              </div>
-              <p class="skills-block-title mt-3">Design Tools</p>
-              <div class="skill-chips">
-                <span class="chip chip--secondary">Canva</span>
-                <span class="chip chip--secondary">Photoshop</span>
-                <span class="chip chip--secondary">Lightroom</span>
-                <span class="chip chip--secondary">Premiere Pro</span>
-                <span class="chip chip--secondary">CapCut</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right column: bio -->
-          <div class="about-right" data-aos="fade-left" data-aos-delay="200">
-            <p class="bio-lead">
-              Hi, I'm <strong>Jeremy Mart V. Nainggolan</strong> — an Information Systems student at Del Institute of
-              Technology with a deep passion for software engineering.
-            </p>
-            <p class="bio-body">
-              Over the past few years, I have honed my skills across the entire development spectrum — crafting dynamic
-              web systems, architecting robust back-end solutions, and building high-performance cross-platform mobile
-              applications.
-            </p>
-            <p class="bio-body">
-              My technical journey includes hands-on industry experience, from optimizing internal operational systems
-              at <strong>PT. Indonesia AirAsia</strong> using Flutter and Laravel, to independently developing
-              autonomous warehouse management applications at <strong>PT. Younexa Inti Materials</strong>. I thrive on
-              solving complex logic puzzles, designing clean database schemas, and optimizing system architectures —
-              including migrating backend environments to cloud infrastructures like Google Compute Engine.
-            </p>
-            <p class="bio-body">
-              Driven by critical thinking and a love for structured logic, I focus on creating efficient, scalable, and
-              user-centric solutions. I'm always eager to learn new technologies and tackle challenging problems to
-              deliver impactful digital solutions.
-            </p>
-
-            <div class="about-cta-row">
-              <a href="./document/resume.pdf" target="_blank" class="btn-about-cta">
-                <i class="bi bi-download"></i> Download CV
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jeremy Nainggolan | Portfolio</title>
+    <meta
+      content="Jeremy Mart V. Nainggolan Professional Portfolio - Web, Back-End, and Mobile Developer"
+      name="description"
+    />
+    <meta
+      content="Jeremy Nainggolan, Software Developer, Web Developer, Back-End Developer, Mobile Developer, Flutter, Laravel, CodeIgniter"
+      name="keywords"
+    />
+    <link href="assets/img/logo/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="index-page">
+    <!-- ═══ HEADER ═══ -->
+    <header class="header d-flex align-items-center sticky-top" id="header">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a class="logo d-flex align-items-center" href="index.html">
+          <span class="logo-mark">MJ</span>
+        </a>
+        <nav class="navmenu" id="navmenu">
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#creative">Creative</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li>
+              <a class="nav-cta" href="./document/resume.pdf" target="_blank">
+                <i class="bi bi-file-earmark-person"></i> CV
               </a>
-              <div class="social-mini">
-                <a href="https://www.linkedin.com/in/jeremy-nainggolan" target="_blank" title="LinkedIn"><i
-                    class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/JeremyNainggolan" target="_blank" title="GitHub"><i
-                    class="bi bi-github"></i></a>
-                <a href="mailto:jeremy.nainggolann@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ PORTFOLIO SECTION ═══ -->
-    <section id="portfolio" class="portfolio section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="section-eyebrow">My Work</span>
-        <h2>Portfolio</h2>
-        <p>Selected projects that show how I build web systems, mobile experiences, and internal tools.</p>
-      </div>
-
-      <div class="container">
-        <div class="isotope-layout" data-layout="masonry" data-default-filter="*" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-web">Web</li>
-            <li data-filter=".filter-mobile">Mobile</li>
+            </li>
           </ul>
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system">
-              <article class="portfolio-card">
-                <a href="assets/img/portfolio/demantis-cover.png" class="glightbox portfolio-card-media"
-                  data-title="Demantis">
-                  <img src="assets/img/portfolio/demantis-cover.png" class="img-fluid"
-                    alt="Demantis project screenshot">
-                  <div class="card-hover-overlay"><i class="bi bi-zoom-in"></i></div>
-                </a>
-                <div class="portfolio-card-body">
-                  <div class="portfolio-card-top">
-                    <span class="portfolio-category">Web System</span>
-                    <h3>Demantis</h3>
-                  </div>
-                  <p>Administrative dashboard for tracking operational data, workflows, and reporting in one place.</p>
-                  <div class="portfolio-card-tags">
-                    <span>CodeIgniter</span><span>Bootstrap</span><span>MySQL</span>
-                  </div>
-                  <div class="portfolio-card-links">
-                    <a href="assets/img/portfolio/demantis-1.png" class="glightbox" data-gallery="portfolio-gallery"
-                      data-title="Demantis preview 1">
-                      <i class="bi bi-images"></i> Gallery
-                    </a>
-                  </div>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <!-- ═══ HERO SECTION ═══ -->
+      <section class="hero section dark-background" id="home">
+        <img alt="" data-aos="fade-in" src="assets/img/home.jpg" />
+        <div class="hero-overlay"></div>
+        <!-- Floating geometric decorations -->
+        <div class="hero-deco hero-deco--circle"></div>
+        <div class="hero-deco hero-deco--ring"></div>
+        <div class="hero-deco hero-deco--dot-grid"></div>
+        <div
+          class="container hero-content"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero-name">Jeremy<br /><em>Nainggolan</em></h1>
+          <div class="hero-role">
+            <span class="role-prefix">—</span>
+            <span
+              class="typed"
+              data-typed-items="Software Developer,Web Developer,Back-End Developer,Mobile Developer"
+            ></span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn-primary-hero" href="#portfolio"
+              >View Work <i class="bi bi-arrow-right-short"></i
+            ></a>
+            <a class="btn-ghost-hero" href="#about">About Me</a>
+          </div>
+        </div>
+        <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="400">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+      <!-- ═══ ABOUT SECTION ═══ -->
+      <section class="about section" id="about">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-header">
+            <span class="section-eyebrow">Who I Am</span>
+            <h2 class="section-heading">About Me</h2>
+          </div>
+          <div class="about-grid">
+            <!-- Left column: photo + info card -->
+            <div class="about-left" data-aos="fade-right" data-aos-delay="150">
+              <div class="profile-photo-wrap">
+                <img
+                  alt="Jeremy Nainggolan"
+                  class="profile-photo"
+                  src="assets/img/profile.jpeg"
+                />
+                <div class="photo-accent"></div>
+              </div>
+              <div class="info-card">
+                <div class="info-row">
+                  <span class="info-label"><i class="bi bi-person"></i></span>
+                  <span class="info-value">Jeremy Mart V. Nainggolan</span>
                 </div>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system">
-              <article class="portfolio-card">
-                <a href="assets/img/portfolio/airmaster-web-admin-cover.png" class="glightbox portfolio-card-media"
-                  data-title="Airmaster Web Admin">
-                  <img src="assets/img/portfolio/airmaster-web-admin-cover.png" class="img-fluid"
-                    alt="Airmaster Web Admin project screenshot">
-                  <div class="card-hover-overlay"><i class="bi bi-zoom-in"></i></div>
-                </a>
-                <div class="portfolio-card-body">
-                  <div class="portfolio-card-top">
-                    <span class="portfolio-category">Web Admin</span>
-                    <h3>Airmaster Web Admin</h3>
-                  </div>
-                  <p>Administrative web dashboard for managing operations, records, and internal workflows.</p>
-                  <div class="portfolio-card-tags">
-                    <span>Laravel</span><span>React</span><span>API</span><span>MySQL</span>
-                  </div>
-                  <div class="portfolio-card-links">
-                    <a href="assets/img/portfolio/airmaster-web-admin-1.png" class="glightbox"
-                      data-gallery="portfolio-gallery" data-title="Airmaster Web Admin preview 1">
-                      <i class="bi bi-images"></i> Gallery
-                    </a>
-                    <a href="assets/img/portfolio/airmaster-web-admin-2.png" class="glightbox d-none"
-                      data-gallery="portfolio-gallery" data-title="Airmaster Web Admin preview 2"></a>
-                  </div>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="bi bi-briefcase"></i
+                  ></span>
+                  <span class="info-value">Web, Back-End &amp; Mobile Dev</span>
                 </div>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system">
-              <article class="portfolio-card">
-                <a href="assets/img/portfolio/facility-maestro-cover.png" class="glightbox portfolio-card-media"
-                  data-title="Facility Maestro">
-                  <img src="assets/img/portfolio/facility-maestro-cover.png" class="img-fluid"
-                    alt="Facility Maestro project screenshot">
-                  <div class="card-hover-overlay"><i class="bi bi-zoom-in"></i></div>
-                </a>
-                <div class="portfolio-card-body">
-                  <div class="portfolio-card-top">
-                    <span class="portfolio-category">Web System</span>
-                    <h3>Facility Maestro</h3>
-                  </div>
-                  <p>Facility management interface designed to simplify monitoring, maintenance requests, and team
-                    coordination.</p>
-                  <div class="portfolio-card-tags">
-                    <span>Laravel</span><span>Bootstrap</span><span>API</span>
-                  </div>
-                  <div class="portfolio-card-links">
-                    <a href="assets/img/portfolio/facility-maestro-admin.png" class="glightbox"
-                      data-gallery="portfolio-gallery" data-title="Facility Maestro preview 1">
-                      <i class="bi bi-images"></i> Gallery
-                    </a>
-                    <a href="assets/img/portfolio/facility-maestro-user.png" class="glightbox d-none"
-                      data-gallery="portfolio-gallery" data-title="Facility Maestro preview 2"></a>
-                  </div>
+                <div class="info-row">
+                  <span class="info-label"><i class="bi bi-envelope"></i></span>
+                  <a
+                    class="info-value info-link"
+                    href="mailto:jeremy.nainggolann@gmail.com"
+                    >jeremy.nainggolann@gmail.com</a
+                  >
                 </div>
-              </article>
+                <div class="info-row">
+                  <span class="info-label"
+                    ><i class="bi bi-telephone"></i
+                  ></span>
+                  <a class="info-value info-link" href="tel:+6285171679411"
+                    >(+62) 851-7167-9411</a
+                  >
+                </div>
+              </div>
+              <!-- Skills chips -->
+              <div class="skills-block">
+                <p class="skills-block-title">Tech Stack</p>
+                <div class="skill-chips">
+                  <span class="chip chip--primary">PHP / Laravel</span>
+                  <span class="chip chip--primary">Dart / Flutter</span>
+                  <span class="chip chip--primary">Java</span>
+                  <span class="chip chip--primary">HTML · CSS · JS</span>
+                  <span class="chip chip--primary">SQL</span>
+                </div>
+                <p class="skills-block-title mt-3">Design Tools</p>
+                <div class="skill-chips">
+                  <span class="chip chip--secondary">Canva</span>
+                  <span class="chip chip--secondary">Photoshop</span>
+                  <span class="chip chip--secondary">Lightroom</span>
+                  <span class="chip chip--secondary">Premiere Pro</span>
+                  <span class="chip chip--secondary">CapCut</span>
+                </div>
+              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <article class="portfolio-card">
-                <a href="assets/img/portfolio/warehouse.jpg" class="glightbox portfolio-card-media"
-                  data-title="Warehouse Management App">
-                  <img src="assets/img/portfolio/warehouse.jpg" class="img-fluid"
-                    alt="Warehouse management project screenshot">
-                  <div class="card-hover-overlay"><i class="bi bi-zoom-in"></i></div>
+            <!-- Right column: bio -->
+            <div class="about-right" data-aos="fade-left" data-aos-delay="200">
+              <p class="bio-lead">
+                Hi, I'm <strong>Jeremy Mart V. Nainggolan</strong> — an
+                Information Systems student at Del Institute of Technology with
+                a deep passion for software engineering.
+              </p>
+              <p class="bio-body">
+                Over the past few years, I have honed my skills across the
+                entire development spectrum — crafting dynamic web systems,
+                architecting robust back-end solutions, and building
+                high-performance cross-platform mobile applications.
+              </p>
+              <p class="bio-body">
+                My technical journey includes hands-on industry experience, from
+                optimizing internal operational systems at
+                <strong>PT. Indonesia AirAsia</strong> using Flutter and
+                Laravel, to independently developing autonomous warehouse
+                management applications at
+                <strong>PT. Younexa Inti Materials</strong>. I thrive on solving
+                complex logic puzzles, designing clean database schemas, and
+                optimizing system architectures — including migrating backend
+                environments to cloud infrastructures like Google Compute
+                Engine.
+              </p>
+              <p class="bio-body">
+                Driven by critical thinking and a love for structured logic, I
+                focus on creating efficient, scalable, and user-centric
+                solutions. I'm always eager to learn new technologies and tackle
+                challenging problems to deliver impactful digital solutions.
+              </p>
+              <div class="about-cta-row">
+                <a
+                  class="btn-about-cta"
+                  href="./document/resume.pdf"
+                  target="_blank"
+                >
+                  <i class="bi bi-download"></i> Download CV
                 </a>
-                <div class="portfolio-card-body">
-                  <div class="portfolio-card-top">
-                    <span class="portfolio-category">Android App</span>
-                    <h3>Warehouse Management</h3>
+                <div class="social-mini">
+                  <a
+                    href="https://www.linkedin.com/in/jeremy-nainggolan"
+                    target="_blank"
+                    title="LinkedIn"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://github.com/JeremyNainggolan"
+                    target="_blank"
+                    title="GitHub"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a href="mailto:jeremy.nainggolann@gmail.com" title="Email"
+                    ><i class="bi bi-envelope"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ═══ PORTFOLIO SECTION ═══ -->
+      <section class="portfolio section light-background" id="portfolio">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">My Work</span>
+          <h2>Portfolio</h2>
+          <p>
+            Selected projects that show how I build web systems, mobile
+            experiences, and internal tools.
+          </p>
+        </div>
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li class="filter-active" data-filter="*">All</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-mobile">Mobile</li>
+            </ul>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system"
+              >
+                <article class="portfolio-card">
+                  <a
+                    class="glightbox portfolio-card-media"
+                    data-title="Demantis"
+                    href="assets/img/portfolio/demantis-cover.png"
+                  >
+                    <img
+                      alt="Demantis project screenshot"
+                      class="img-fluid"
+                      src="assets/img/portfolio/demantis-cover.png"
+                    />
+                    <div class="card-hover-overlay">
+                      <i class="bi bi-zoom-in"></i>
+                    </div>
+                  </a>
+                  <div class="portfolio-card-body">
+                    <div class="portfolio-card-top">
+                      <span class="portfolio-category">Web System</span>
+                      <h3>Demantis</h3>
+                    </div>
+                    <p>
+                      Administrative dashboard for tracking operational data,
+                      workflows, and reporting in one place.
+                    </p>
+                    <div class="portfolio-card-tags">
+                      <span>CodeIgniter</span><span>Bootstrap</span
+                      ><span>MySQL</span>
+                    </div>
+                    <div class="portfolio-card-links">
+                      <a
+                        class="glightbox"
+                        data-gallery="portfolio-gallery"
+                        data-title="Demantis preview 1"
+                        href="assets/img/portfolio/demantis-1.png"
+                      >
+                        <i class="bi bi-images"></i> Gallery
+                      </a>
+                    </div>
                   </div>
-                  <p>Android workflow app for warehouse operations, inventory tracking, and barcode-supported logging.
+                </article>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system"
+              >
+                <article class="portfolio-card">
+                  <a
+                    class="glightbox portfolio-card-media"
+                    data-title="Airmaster Web Admin"
+                    href="assets/img/portfolio/airmaster-web-admin-cover.png"
+                  >
+                    <img
+                      alt="Airmaster Web Admin project screenshot"
+                      class="img-fluid"
+                      src="assets/img/portfolio/airmaster-web-admin-cover.png"
+                    />
+                    <div class="card-hover-overlay">
+                      <i class="bi bi-zoom-in"></i>
+                    </div>
+                  </a>
+                  <div class="portfolio-card-body">
+                    <div class="portfolio-card-top">
+                      <span class="portfolio-category">Web Admin</span>
+                      <h3>Airmaster Web Admin</h3>
+                    </div>
+                    <p>
+                      Administrative web dashboard for managing operations,
+                      records, and internal workflows.
+                    </p>
+                    <div class="portfolio-card-tags">
+                      <span>Laravel</span><span>React</span><span>API</span
+                      ><span>MySQL</span>
+                    </div>
+                    <div class="portfolio-card-links">
+                      <a
+                        class="glightbox"
+                        data-gallery="portfolio-gallery"
+                        data-title="Airmaster Web Admin preview 1"
+                        href="assets/img/portfolio/airmaster-web-admin-1.png"
+                      >
+                        <i class="bi bi-images"></i> Gallery
+                      </a>
+                      <a
+                        class="glightbox d-none"
+                        data-gallery="portfolio-gallery"
+                        data-title="Airmaster Web Admin preview 2"
+                        href="assets/img/portfolio/airmaster-web-admin-2.png"
+                      ></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-system"
+              >
+                <article class="portfolio-card">
+                  <a
+                    class="glightbox portfolio-card-media"
+                    data-title="Facility Maestro"
+                    href="assets/img/portfolio/facility-maestro-cover.png"
+                  >
+                    <img
+                      alt="Facility Maestro project screenshot"
+                      class="img-fluid"
+                      src="assets/img/portfolio/facility-maestro-cover.png"
+                    />
+                    <div class="card-hover-overlay">
+                      <i class="bi bi-zoom-in"></i>
+                    </div>
+                  </a>
+                  <div class="portfolio-card-body">
+                    <div class="portfolio-card-top">
+                      <span class="portfolio-category">Web System</span>
+                      <h3>Facility Maestro</h3>
+                    </div>
+                    <p>
+                      Facility management interface designed to simplify
+                      monitoring, maintenance requests, and team coordination.
+                    </p>
+                    <div class="portfolio-card-tags">
+                      <span>Laravel</span><span>Bootstrap</span><span>API</span>
+                    </div>
+                    <div class="portfolio-card-links">
+                      <a
+                        class="glightbox"
+                        data-gallery="portfolio-gallery"
+                        data-title="Facility Maestro preview 1"
+                        href="assets/img/portfolio/facility-maestro-admin.png"
+                      >
+                        <i class="bi bi-images"></i> Gallery
+                      </a>
+                      <a
+                        class="glightbox d-none"
+                        data-gallery="portfolio-gallery"
+                        data-title="Facility Maestro preview 2"
+                        href="assets/img/portfolio/facility-maestro-user.png"
+                      ></a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile"
+              >
+                <article class="portfolio-card">
+                  <a
+                    class="glightbox portfolio-card-media"
+                    data-title="Warehouse Management App"
+                    href="assets/img/portfolio/warehouse.jpg"
+                  >
+                    <img
+                      alt="Warehouse management project screenshot"
+                      class="img-fluid"
+                      src="assets/img/portfolio/warehouse.jpg"
+                    />
+                    <div class="card-hover-overlay">
+                      <i class="bi bi-zoom-in"></i>
+                    </div>
+                  </a>
+                  <div class="portfolio-card-body">
+                    <div class="portfolio-card-top">
+                      <span class="portfolio-category">Android App</span>
+                      <h3>Warehouse Management</h3>
+                    </div>
+                    <p>
+                      Android workflow app for warehouse operations, inventory
+                      tracking, and barcode-supported logging.
+                    </p>
+                    <div class="portfolio-card-tags">
+                      <span>Java Native</span><span>Android</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile"
+              >
+                <article class="portfolio-card">
+                  <a
+                    class="glightbox portfolio-card-media"
+                    data-title="Airmaster Mobile App"
+                    href="assets/img/portfolio/airmaster-cover.jpg"
+                  >
+                    <img
+                      alt="Airmaster mobile app screenshot"
+                      class="img-fluid"
+                      src="assets/img/portfolio/airmaster-cover.jpg"
+                    />
+                    <div class="card-hover-overlay">
+                      <i class="bi bi-zoom-in"></i>
+                    </div>
+                  </a>
+                  <div class="portfolio-card-body">
+                    <div class="portfolio-card-top">
+                      <span class="portfolio-category">Mobile App</span>
+                      <h3>Airmaster</h3>
+                    </div>
+                    <p>
+                      An internal operational mobile application built to
+                      streamline corporate workflows and track real-time
+                      operational data.
+                    </p>
+                    <div class="portfolio-card-tags">
+                      <span>Flutter</span><span>Cross Mobile Platform</span
+                      ><span>Google SSO</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ═══ PHOTOGRAPHY & EDITING SECTION ═══ -->
+      <section class="creative section" id="creative">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">Beyond Code</span>
+          <h2>Photography &amp; Editing</h2>
+          <p>
+            A creative side of me — capturing moments and crafting visuals
+            through the lens and post-processing.
+          </p>
+        </div>
+        <div class="container">
+          <!-- Masonry grid -->
+          <div
+            class="creative-grid"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="creativeGrid"
+          >
+            <!-- PORTRAIT -->
+            <div
+              class="creative-item creative-item--tall"
+              data-category="portrait"
+              data-photo-index="0"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/3x4-1.jpg"
+              >
+                <img
+                  alt=""
+                  loading="eager"
+                  src="assets/img/photography/3x4-1.jpg"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Art Gallery</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall"
+              data-category="portrait"
+              data-photo-index="1"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-2.jpg"
+              >
+                <img
+                  alt=""
+                  loading="eager"
+                  src="assets/img/photography/portrait-2.jpg"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Public Transport</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall"
+              data-category="portrait"
+              data-photo-index="2"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-5.jpg"
+              >
+                <img
+                  alt=""
+                  loading="eager"
+                  src="assets/img/photography/portrait-5.jpg"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Rural Landscape</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="3"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-6.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-6.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Sunny Campus</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="4"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-7.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-7.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Mountain Lake</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="5"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-9.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-9.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Amphitheater Garden</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="6"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-10.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-10.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Campus Pathway</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="7"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-11.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-11.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Mountain Valley</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="8"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-12.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-12.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Palm Trees</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="9"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-13.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-13.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Cafe Interior</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="10"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-14.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-14.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Twilight Sky</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="11"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-15.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-15.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Garden Flowers</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="12"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-16.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-16.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Golden Sunset</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="13"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-17.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-17.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Morning Sunrise</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="14"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/square-1.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/square-1.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Evening Dusk</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="15"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/square-2.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/square-2.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Train Station</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="16"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-3.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-3.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Tech Setup</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="17"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/3x4-2.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/3x4-2.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Billiard Table</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="18"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/3x4-3.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/3x4-3.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Clear Sky</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="19"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/3x4-4.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/3x4-4.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Radio Tower</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="creative-item creative-item--tall creative-item--hidden"
+              data-category="portrait"
+              data-photo-index="20"
+            >
+              <a
+                class="glightbox creative-thumb"
+                href="assets/img/photography/portrait-8.jpg"
+              >
+                <img
+                  alt=""
+                  data-src="assets/img/photography/portrait-8.jpg"
+                  loading="lazy"
+                />
+                <div class="creative-overlay">
+                  <span class="creative-overlay-cat">Brick Amphitheater</span>
+                  <span class="creative-overlay-icon"
+                    ><i class="bi bi-zoom-in"></i
+                  ></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Load More Button -->
+          <div class="creative-load-more-wrap" data-aos="fade-up">
+            <button
+              aria-label="Load more photos"
+              class="creative-load-more-btn"
+              id="creativeLoadMore"
+            >
+              <span class="load-more-text">More </span>
+              <span class="load-more-spinner" style="display: none">
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                ></span>
+                Loading…
+              </span>
+            </button>
+            <p class="creative-photo-counter">
+              Showing <span id="shownCount">3</span> of
+              <span id="totalCount">22</span> photos
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ═══ RESUME SECTION ═══ -->
+      <section class="resume section" id="resume">
+        <div class="container section-title" data-aos="fade-up">
+          <span class="section-eyebrow">My Journey</span>
+          <h2>Resume</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!-- Left column -->
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="resume-group">
+                <div class="resume-group-label">
+                  <i class="bi bi-mortarboard-fill"></i> Education
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Bachelor of Information Systems</h4>
+                  <h5><i class="bi bi-calendar3"></i> 2022 – 2026</h5>
+                  <p class="resume-place">
+                    <i class="bi bi-geo-alt"></i> Del Institute of Technology,
+                    Laguboti, North Sumatra
                   </p>
-                  <div class="portfolio-card-tags">
-                    <span>Java Native</span><span>Android</span>
-                  </div>
+                  <p class="resume-note">GPA: <strong>3.49 / 4.00</strong></p>
                 </div>
-              </article>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <article class="portfolio-card">
-                <a href="assets/img/portfolio/airmaster-cover.jpg" class="glightbox portfolio-card-media"
-                  data-title="Airmaster Mobile App">
-                  <img src="assets/img/portfolio/airmaster-cover.jpg" class="img-fluid"
-                    alt="Airmaster mobile app screenshot">
-                  <div class="card-hover-overlay"><i class="bi bi-zoom-in"></i></div>
-                </a>
-                <div class="portfolio-card-body">
-                  <div class="portfolio-card-top">
-                    <span class="portfolio-category">Mobile App</span>
-                    <h3>Airmaster</h3>
-                  </div>
-                  <p>An internal operational mobile application built to streamline corporate workflows and track
-                    real-time operational data.</p>
-                  <div class="portfolio-card-tags">
-                    <span>Flutter</span><span>Cross Mobile Platform</span><span>Google SSO</span>
-                  </div>
+              </div>
+              <div class="resume-group">
+                <div class="resume-group-label">
+                  <i class="bi bi-people-fill"></i> Organization &amp;
+                  Leadership
                 </div>
-              </article>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ PHOTOGRAPHY & EDITING SECTION ═══ -->
-    <section id="creative" class="creative section">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="section-eyebrow">Beyond Code</span>
-        <h2>Photography &amp; Editing</h2>
-        <p>A creative side of me — capturing moments and crafting visuals through the lens and post-processing.</p>
-      </div>
-
-      <div class="container">
-
-        <!-- Masonry grid -->
-        <div class="creative-grid" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- PORTRAIT -->
-          <div class="creative-item creative-item--tall" data-category="portrait">
-            <a href="assets/img/photography/3x4-1.jpg" class="glightbox creative-thumb">
-              <img src="assets/img/photography/3x4-1.jpg" alt="">
-              <div class="creative-overlay">
-                <span class="creative-overlay-cat">Portrait</span>
-                <span class="creative-overlay-icon"><i class="bi bi-zoom-in"></i></span>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Information Systems Student Association</h4>
+                  <h5><i class="bi bi-calendar3"></i> 2024 – 2025</h5>
+                  <p class="resume-place">
+                    <i class="bi bi-geo-alt"></i> Del Institute of Technology
+                  </p>
+                  <p class="resume-role">Chief of Education Division</p>
+                  <ul>
+                    <li>
+                      Organized inter-faculty programming competitions and
+                      technical workshops to enhance coding and problem-solving
+                      skills.
+                    </li>
+                    <li>
+                      Mentored team members in leadership and project management
+                      within a collaborative environment.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </a>
-          </div>
-
-          <div class="creative-item creative-item--tall" data-category="portrait">
-            <a href="assets/img/photography/portrait-2.jpg" class="glightbox creative-thumb">
-              <img src="assets/img/photography/portrait-2.jpg" alt="">
-              <div class="creative-overlay">
-                <span class="creative-overlay-cat">Portrait</span>
-                <span class="creative-overlay-icon"><i class="bi bi-zoom-in"></i></span>
-              </div>
-            </a>
-          </div>
-          
-          <div class="creative-item creative-item--tall" data-category="portrait">
-            <a href="assets/img/photography/portrait-5.jpg" class="glightbox creative-thumb">
-              <img src="assets/img/photography/portrait-5.jpg" alt="">
-              <div class="creative-overlay">
-                <span class="creative-overlay-cat">Portrait</span>
-                <span class="creative-overlay-icon"><i class="bi bi-zoom-in"></i></span>
-              </div>
-            </a>
-          </div>
-          
-          <div class="creative-item creative-item--wide" data-category="portrait">
-            <a href="assets/img/photography/portrait-6.jpg" class="glightbox creative-thumb">
-              <img src="assets/img/photography/portrait-6.jpg" alt="">
-              <div class="creative-overlay">
-                <span class="creative-overlay-cat">Portrait</span>
-                <span class="creative-overlay-icon"><i class="bi bi-zoom-in"></i></span>
-              </div>
-            </a>
-          </div>
-
-
-
-
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══ RESUME SECTION ═══ -->
-    <section id="resume" class="resume section">
-      <div class="container section-title" data-aos="fade-up">
-        <span class="section-eyebrow">My Journey</span>
-        <h2>Resume</h2>
-      </div>
-
-      <div class="container">
-        <div class="row">
-
-          <!-- Left column -->
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-
-            <div class="resume-group">
-              <div class="resume-group-label">
-                <i class="bi bi-mortarboard-fill"></i> Education
-              </div>
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Bachelor of Information Systems</h4>
-                <h5><i class="bi bi-calendar3"></i> 2022 – 2026</h5>
-                <p class="resume-place"><i class="bi bi-geo-alt"></i> Del Institute of Technology, Laguboti, North
-                  Sumatra</p>
-                <p class="resume-note">GPA: <strong>3.49 / 4.00</strong></p>
+              <div class="resume-group">
+                <div class="resume-group-label">
+                  <i class="bi bi-heart-fill"></i> Volunteer
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Study Orientation &amp; Campus Introduction</h4>
+                  <h5><i class="bi bi-calendar3"></i> 2023</h5>
+                  <p class="resume-place">
+                    <i class="bi bi-geo-alt"></i> Del Institute of Technology
+                  </p>
+                  <p class="resume-role">Head of Documentation Division</p>
+                  <ul>
+                    <li>
+                      Led a team of volunteers in organizing study orientation
+                      and campus introduction events.
+                    </li>
+                    <li>
+                      Coordinated with other divisions to ensure smooth
+                      execution of the events.
+                    </li>
+                    <li>
+                      Managed documentation and record-keeping for the events.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-            <div class="resume-group">
-              <div class="resume-group-label">
-                <i class="bi bi-people-fill"></i> Organization &amp; Leadership
+            <!-- Right column -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="resume-group">
+                <div class="resume-group-label">
+                  <i class="bi bi-briefcase-fill"></i> Professional Experience
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot resume-item-dot--current"></div>
+                  <span class="resume-badge resume-badge--current"
+                    >Current</span
+                  >
+                  <h4>Mobile &amp; System Developer — Internship</h4>
+                  <h5>
+                    <i class="bi bi-calendar3"></i> January 2025 – Present
+                  </h5>
+                  <p class="resume-place">
+                    <i class="bi bi-building"></i> PT. Indonesia AirAsia,
+                    Jakarta
+                  </p>
+                  <ul>
+                    <li>
+                      Refactored and optimized the core mobile application
+                      codebase using Flutter and GetX.
+                    </li>
+                    <li>
+                      Developed and integrated robust RESTful API endpoints
+                      using Laravel for enterprise operational systems.
+                    </li>
+                    <li>
+                      Migrated core server infrastructure to Google Compute
+                      Engine (GCP VM) to significantly improve system
+                      availability.
+                    </li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Programmer — Internship</h4>
+                  <h5>
+                    <i class="bi bi-calendar3"></i> June 2024 – August 2024
+                  </h5>
+                  <p class="resume-place">
+                    <i class="bi bi-building"></i> PT. Younexa Inti Materials,
+                    Cikarang, West Java
+                  </p>
+                  <ul>
+                    <li>
+                      Developed an autonomous Android application from scratch
+                      for internal warehouse management and automated tracking
+                      workflows.
+                    </li>
+                    <li>
+                      Integrated barcode scanning features and automated server
+                      reporting modules to minimize inventory logging errors.
+                    </li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Teaching Assistant — Computer Architecture</h4>
+                  <h5>
+                    <i class="bi bi-calendar3"></i> February 2024 – May 2024
+                  </h5>
+                  <p class="resume-place">
+                    <i class="bi bi-building"></i> Del Institute of Technology
+                  </p>
+                  <ul>
+                    <li>
+                      Assisted in conducting practical lab sessions on CPU
+                      architecture and memory management.
+                    </li>
+                    <li>
+                      Graded practical exams and assignments, providing
+                      technical constructive feedback.
+                    </li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-item-dot"></div>
+                  <h4>Teaching Assistant — Visual Programming</h4>
+                  <h5>
+                    <i class="bi bi-calendar3"></i> September 2023 – December
+                    2023
+                  </h5>
+                  <p class="resume-place">
+                    <i class="bi bi-building"></i> Del Institute of Technology
+                  </p>
+                  <ul>
+                    <li>
+                      Guided students in mastering structured programming logic,
+                      UI workflow, and event-driven architectures.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Information Systems Student Association</h4>
-                <h5><i class="bi bi-calendar3"></i> 2024 – 2025</h5>
-                <p class="resume-place"><i class="bi bi-geo-alt"></i> Del Institute of Technology</p>
-                <p class="resume-role">Chief of Education Division</p>
-                <ul>
-                  <li>Organized inter-faculty programming competitions and technical workshops to enhance coding and
-                    problem-solving skills.</li>
-                  <li>Mentored team members in leadership and project management within a collaborative environment.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="resume-group">
-              <div class="resume-group-label">
-                <i class="bi bi-heart-fill"></i> Volunteer
-              </div>
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Study Orientation &amp; Campus Introduction</h4>
-                <h5><i class="bi bi-calendar3"></i> 2023</h5>
-                <p class="resume-place"><i class="bi bi-geo-alt"></i> Del Institute of Technology</p>
-                <p class="resume-role">Head of Documentation Division</p>
-                <ul>
-                  <li>Led a team of volunteers in organizing study orientation and campus introduction events.</li>
-                  <li>Coordinated with other divisions to ensure smooth execution of the events.</li>
-                  <li>Managed documentation and record-keeping for the events.</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Right column -->
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-
-            <div class="resume-group">
-              <div class="resume-group-label">
-                <i class="bi bi-briefcase-fill"></i> Professional Experience
-              </div>
-
-              <div class="resume-item">
-                <div class="resume-item-dot resume-item-dot--current"></div>
-                <span class="resume-badge resume-badge--current">Current</span>
-                <h4>Mobile &amp; System Developer — Internship</h4>
-                <h5><i class="bi bi-calendar3"></i> January 2025 – Present</h5>
-                <p class="resume-place"><i class="bi bi-building"></i> PT. Indonesia AirAsia, Jakarta</p>
-                <ul>
-                  <li>Refactored and optimized the core mobile application codebase using Flutter and GetX.</li>
-                  <li>Developed and integrated robust RESTful API endpoints using Laravel for enterprise operational
-                    systems.</li>
-                  <li>Migrated core server infrastructure to Google Compute Engine (GCP VM) to significantly improve
-                    system availability.</li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Programmer — Internship</h4>
-                <h5><i class="bi bi-calendar3"></i> June 2024 – August 2024</h5>
-                <p class="resume-place"><i class="bi bi-building"></i> PT. Younexa Inti Materials, Cikarang, West Java
-                </p>
-                <ul>
-                  <li>Developed an autonomous Android application from scratch for internal warehouse management and
-                    automated tracking workflows.</li>
-                  <li>Integrated barcode scanning features and automated server reporting modules to minimize inventory
-                    logging errors.</li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Teaching Assistant — Computer Architecture</h4>
-                <h5><i class="bi bi-calendar3"></i> February 2024 – May 2024</h5>
-                <p class="resume-place"><i class="bi bi-building"></i> Del Institute of Technology</p>
-                <ul>
-                  <li>Assisted in conducting practical lab sessions on CPU architecture and memory management.</li>
-                  <li>Graded practical exams and assignments, providing technical constructive feedback.</li>
-                </ul>
-              </div>
-
-              <div class="resume-item">
-                <div class="resume-item-dot"></div>
-                <h4>Teaching Assistant — Visual Programming</h4>
-                <h5><i class="bi bi-calendar3"></i> September 2023 – December 2023</h5>
-                <p class="resume-place"><i class="bi bi-building"></i> Del Institute of Technology</p>
-                <ul>
-                  <li>Guided students in mastering structured programming logic, UI workflow, and event-driven
-                    architectures.</li>
-                </ul>
-              </div>
-
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">MJ</span>
+          <p>
+            Building elegant digital solutions,<br />one line of code at a time.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#resume">Resume</a>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/jeremy-nainggolan"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="mailto:jeremy.nainggolann@gmail.com" title="Email"
+            ><i class="bi bi-envelope"></i
+          ></a>
+          <a
+            href="https://github.com/JeremyNainggolan"
+            target="_blank"
+            title="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/mart.jeremiah/"
+            target="_blank"
+            title="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://wa.me/6285171679411" target="_blank" title="WhatsApp"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+        </div>
       </div>
-    </section>
-
-  </main>
-
-  <!-- ═══ FOOTER ═══ -->
-  <footer id="footer" class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">MJ</span>
-        <p>Building elegant digital solutions,<br>one line of code at a time.</p>
+      <div class="footer-bottom">
+        <p>© 2025 <strong>Jeremy Nainggolan</strong>. All Rights Reserved.</p>
       </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#resume">Resume</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/jeremy-nainggolan" target="_blank" title="LinkedIn"><i
-            class="bi bi-linkedin"></i></a>
-        <a href="mailto:jeremy.nainggolann@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
-        <a href="https://github.com/JeremyNainggolan" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/mart.jeremiah/" target="_blank" title="Instagram"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/6285171679411" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 <strong>Jeremy Nainggolan</strong>. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+    </footer>
+    <a
+      class="scroll-top d-flex align-items-center justify-content-center"
+      href="#"
+      id="scroll-top"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

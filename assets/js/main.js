@@ -249,6 +249,88 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
   /**
+   * Photography Load More
+   * - Shows only BATCH_SIZE items at first load.
+   * - Each click reveals BATCH_SIZE more, lazy-loads their <img> src,
+   *   and re-inits GLightbox so the new items work in the lightbox.
+   */
+  (function initCreativeLoadMore() {
+    const BATCH_SIZE = 3;
+    const grid        = document.getElementById('creativeGrid');
+    const btn         = document.getElementById('creativeLoadMore');
+    const shownEl     = document.getElementById('shownCount');
+    const totalEl     = document.getElementById('totalCount');
+
+    if (!grid || !btn) return;
+
+    const allItems = Array.from(grid.querySelectorAll('.creative-item'));
+    const total    = allItems.length;
+    let   shown    = allItems.filter(el => !el.classList.contains('creative-item--hidden')).length;
+
+    if (totalEl) totalEl.textContent = total;
+    if (shownEl) shownEl.textContent = shown;
+
+    // Hide load-more button if everything is already visible
+    if (shown >= total) {
+      btn.parentElement.style.display = 'none';
+      return;
+    }
+
+    btn.addEventListener('click', function () {
+      const textEl    = btn.querySelector('.load-more-text');
+      const spinnerEl = btn.querySelector('.load-more-spinner');
+
+      // Show spinner
+      btn.disabled    = true;
+      textEl.style.display    = 'none';
+      spinnerEl.style.display = 'inline-flex';
+
+      // Simulate a brief loading delay so the spinner is visible
+      setTimeout(function () {
+        let revealed = 0;
+        const hiddenItems = allItems.filter(el => el.classList.contains('creative-item--hidden'));
+
+        hiddenItems.slice(0, BATCH_SIZE).forEach(function (item) {
+          // Lazy-load image: swap data-src → src
+          const img = item.querySelector('img[data-src]');
+          if (img) {
+            img.src = img.getAttribute('data-src');
+            img.removeAttribute('data-src');
+          }
+
+          // Reveal item with a fade-in animation
+          item.classList.remove('creative-item--hidden');
+          item.classList.add('creative-item--reveal');
+          // Remove animation class after it plays
+          item.addEventListener('animationend', function () {
+            item.classList.remove('creative-item--reveal');
+          }, { once: true });
+
+          revealed++;
+        });
+
+        shown += revealed;
+        if (shownEl) shownEl.textContent = shown;
+
+        // Re-init GLightbox so new images are added to the lightbox
+        if (typeof GLightbox !== 'undefined') {
+          GLightbox({ selector: '.glightbox' });
+        }
+
+        // Reset button state
+        btn.disabled            = false;
+        textEl.style.display    = '';
+        spinnerEl.style.display = 'none';
+
+        // Hide button when all photos are shown
+        if (shown >= total) {
+          btn.parentElement.querySelector('.creative-load-more-btn').style.display = 'none';
+        }
+      }, 600); // 600ms loading feel
+    });
+  })();
+
+  /**
    * Creative Gallery Filter
    */
   const creativeFilters = document.querySelectorAll('.creative-filter');
